@@ -1,0 +1,61 @@
+/* Keskitys koko sivulle */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background: #792a2a;
+}
+
+/* Flexbox-kontti */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+/* Itse laatikko */
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 90%;
+    max-width: 320px;
+}
+
+/* Lomake-elementit */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+/* Pieni teksti */
+p {
+    text-align: center;
+    font-size: 16px;
+}

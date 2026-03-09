@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Analyysi päivitetty');
   });
   
+  
   // Enter-näppäin toimii myös
   [weightInput, heightInput].forEach(input => {
     input.addEventListener('keypress', (e) => {
@@ -76,4 +77,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  
 });

@@ -1,0 +1,279 @@
+/* RESET – nollaa oletustyylit */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SIVUN PERUSASETUKSET */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb; /* vaalea tausta */
+  color: #1a2a33; /* tumma teksti */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* koko näytön korkeus */
+}
+
+/* NAVIGAATIO */
+nav {
+  background: #1c2b36; /* tummansininen tausta */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAV – vasen puoli (logo/teksti) */
+.nav-left {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5bd1d7; /* turkoosi */
+}
+
+/* NAV – oikea puoli (linkit) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* NAV-LINKIT */
+nav a {
+  color: #cfd8dc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #5bd1d7; /* korostus */
+}
+
+/* ULOS-KIRJAUTUMISNAPPULA */
+.logout-btn {
+  background: #e53935; /* punainen */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #c62828; /* tummempi punainen */
+}
+
+/* PÄÄSISÄLTÖ */
+main {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* SIVUN KESKIALUE */
+.page-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* HERO-ALUE (etusivun iso kuva + teksti) */
+.hero-split {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* HERO-KUVA */
+.hero-img {
+  width: 380px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* HERO-TEKSTI */
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* HERO-NAPIT */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* ISOT NAPIT (yleinen tyyli) */
+.big-btn {
+  background: #1c2b36;
+  color: white;
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.25s;
+}
+
+.big-btn:hover {
+  background: #5bd1d7;
+  color: #1c2b36;
+  transform: scale(1.05);
+}
+
+/* KORTIT (jos käytetään myöhemmin) */
+.card-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 260px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1c2b36;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card-btn:hover {
+  background: #5bd1d7;
+  color: #1c2b36;
+}
+
+/* FOOTER */
+footer {
+  background: #1c2b36;
+  color: #b0bec5;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+/* ANIMAATIO: fade-in + slide-up */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* ANIMAATION KEYFRAMES */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BMI-TAULUKKO */
+.bmi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.bmi-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bmi-range.active {
+  background: #5bd1d7;
+  color: #1c2b36;
+  font-weight: 700;
+}
+
+.bmi-result {
+  margin-top: 20px;
+}
+
+.bmi-score {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* PÄIVÄKIRJAN FLEXBOX-LAYOUT */
+.entries-grid {
+  display: flex;
+  flex-wrap: wrap; /* rivittyy automaattisesti */
+  gap: 20px;
+}
+
+/* YKSI PÄIVÄKIRJALAATIKKO */
+.entry-box {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.entry-box h4 {
+  margin-bottom: 5px;
+}
+
+.entry-box .mood {
+  font-weight: 700;
+}
+
+.entry-box .comment {
+  font-style: italic;
+  color: #555;
+}
+
+/* PÄIVÄKIRJAN LOMAKE */
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* PIILOTA ELEMENTTI */
+.hidden {
+  display: none;
+}
