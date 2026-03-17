@@ -1,8 +1,11 @@
-const btn = document.getElementById("logoutBtn");
+// Haetaan logout-nappi
+const logoutBtn = document.getElementById("logoutBtn");
 
-if (btn) {
-  btn.addEventListener("click", () => {
-    localStorage.removeItem("token");
-    window.location.href = "login.html";
-  });
-}
+// Kun käyttäjä painaa "Kirjaudu ulos"
+logoutBtn.addEventListener("click", () => {
+  // Poistetaan token localStoragesta
+  localStorage.removeItem("token");
+
+  // Ohjataan käyttäjä takaisin kirjautumissivulle
+  window.location.href = "login.html";
+});
