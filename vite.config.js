@@ -8,9 +8,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        home: resolve(__dirname, 'index.html'),
-        bmi: resolve(__dirname, 'bmi.html'),
-        viikoteh: resolve(__dirname, 'viikkotehtavat.html'),
+        home: resolve(__dirname, 'src/html/home.html'),
+        bmi: resolve(__dirname, 'src/html/bmi.html'),
       },
     },
   },

@@ -1,0 +1,36 @@
+{"level":30,"time":"2026-03-24T09:07:54.363Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Listening on 127.0.0.1:51862"}
+{"level":30,"time":"2026-03-24T09:07:54.484Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-24T09:07:56.577Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-24T09:07:56.578Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-24T09:07:56.578Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-24T09:07:56.636Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-24T09:07:56.637Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@472f401e426d2e2b6358f750f1b32f56\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=e248f2ef-0949-40b4-8fdf-25fe15f0068f\"}"}
+{"level":30,"time":"2026-03-24T09:07:56.696Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Setting default timeout for context context=06545d0a-d68f-4c61-adde-90f230c9cee8 to 10000"}
+{"level":30,"time":"2026-03-24T09:07:56.697Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active context: context=06545d0a-d68f-4c61-adde-90f230c9cee8"}
+{"level":30,"time":"2026-03-24T09:07:57.058Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-24T09:07:57.058Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-03-24T09:07:57.158Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-24T09:07:57.215Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:07:57.216Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=username in page."}
+{"level":30,"time":"2026-03-24T09:07:57.716Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:07:57.722Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:07:57.722Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2026-03-24T09:07:58.195Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:07:58.203Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-24T09:07:58.203Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with button in page."}
+{"level":30,"time":"2026-03-24T09:07:58.250Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method click"}
+================= Original suppressed error =================
+page.title: Execution context was destroyed, most likely because of a navigation
+    at getTitle (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js:11966:28)
+    at PlaywrightServer.getTitle (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js:13881:30)
+    at Object.onReceiveHalfClose (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2026-03-24T09:07:59.271Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-24T09:07:59.272Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","Take screenshot with options: ":{"path":"C:\\Users\\nice.pavliuk\\Desktop\\Ulla2.0\\k2026-hyte-projekti-vite\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-24T09:07:59.444Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-24T09:25:06.025Z","pid":8948,"hostname":"LAPTOP-VS82V6FV","msg":"Removed page=ded4d57b-7399-4d6a-b509-a3e8129a38da from context=06545d0a-d68f-4c61-adde-90f230c9cee8 page stack"}
