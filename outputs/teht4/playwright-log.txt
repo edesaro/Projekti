@@ -1,0 +1,88 @@
+{"level":30,"time":"2026-04-06T18:18:06.358Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Listening on 127.0.0.1:61260"}
+{"level":30,"time":"2026-04-06T18:18:06.561Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-06T18:18:06.910Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-06T18:18:06.910Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-06T18:18:06.910Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-06T18:18:06.938Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-06T18:18:06.938Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@5f538ac02816ddd937367bfccae28954\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=6456c6f3-2f8f-49b1-97a9-f6ede4dea603\"}"}
+{"level":30,"time":"2026-04-06T18:18:06.990Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Setting default timeout for context context=baf6bcae-4931-482d-a1f4-d6dc79afcdec to 10000"}
+{"level":30,"time":"2026-04-06T18:18:06.990Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active context: context=baf6bcae-4931-482d-a1f4-d6dc79afcdec"}
+{"level":30,"time":"2026-04-06T18:18:07.416Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-06T18:18:07.416Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-04-06T18:18:07.522Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-06T18:18:07.529Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-06T18:18:07.529Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=username in page."}
+{"level":30,"time":"2026-04-06T18:18:08.174Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-06T18:18:08.181Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-06T18:18:08.181Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2026-04-06T18:18:08.247Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-06T18:18:08.252Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-06T18:18:08.253Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-04-06T18:18:08.297Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method click"}
+{"level":30,"time":"2026-04-06T18:18:08.303Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-06T18:18:08.304Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@5f538ac02816ddd937367bfccae28954\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=baf6bcae-4931-482d-a1f4-d6dc79afcdec\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@fc702fb38503b5d9a497aaa1e099246e\"},\"pageStack\":[{\"id\":\"page=de00c1c1-d4cf-41dc-b454-4c54669607e7\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@f15cfed8c18f1b298f75cc7c63bda3fc\"},\"timestamp\":1775499487.415,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"debug\",\"text\":\"[vite] connecting...\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":732,\"columnNumber\":8},\"time\":\"2026-04-06T18:18:07.507Z\"},{\"type\":\"debug\",\"text\":\"[vite] connected.\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":826,\"columnNumber\":11},\"time\":\"2026-04-06T18:18:07.519Z\"},{\"type\":\"log\",\"text\":\"API URL: /api\",\"location\":{\"url\":\"http://localhost:5173/src/js/api.js\",\"lineNumber\":3,\"columnNumber\":8},\"time\":\"2026-04-06T18:18:07.519Z\"},{\"type\":\"log\",\"text\":\"login.js loaded\",\"location\":{\"url\":\"http://localhost:5173/src/js/login.js\",\"lineNumber\":2,\"columnNumber\":8},\"time\":\"2026-04-06T18:18:07.519Z\"},{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"current-password\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"http://localhost:5173/src/html/login.html\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2026-04-06T18:18:07.521Z\"},{\"type\":\"error\",\"text\":\"Failed to load resource: the server responded with a status of 404 (Not Found)\",\"location\":{\"url\":\"http://localhost:5173/favicon.ico\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2026-04-06T18:18:07.561Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"traceFile\":\"\"}],\"id\":\"browser=6456c6f3-2f8f-49b1-97a9-f6ede4dea603\"}"}
+{"level":30,"time":"2026-04-06T18:18:08.345Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-06T18:18:08.345Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-04-06T18:18:08.454Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-06T18:18:08.459Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-06T18:18:08.459Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with css=#newEntryBtn in page."}
+{"level":30,"time":"2026-04-06T18:18:08.628Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method click"}
+{"level":30,"time":"2026-04-06T18:18:08.634Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-06T18:18:08.635Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with css=#entryForm in page."}
+{"level":30,"time":"2026-04-06T18:18:08.640Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-06T18:18:08.644Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-06T18:18:08.644Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=sleep in page."}
+{"level":30,"time":"2026-04-06T18:18:09.003Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-06T18:18:09.008Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-04-06T18:18:09.008Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=mood in page."}
+{"level":30,"time":"2026-04-06T18:18:19.023Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Error of node method  selectOption"}
+================= Original suppressed error =================
+locator.selectOption: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('id=mood')[22m
+[2m    - locator resolved to <select id="mood">…</select>[22m
+[2m  - attempting select option action[22m
+[2m    2 × waiting for element to be visible and enabled[22m
+[2m      - did not find some options[22m
+[2m    - retrying select option action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible and enabled[22m
+[2m      - did not find some options[22m
+[2m    - retrying select option action[22m
+[2m      - waiting 100ms[22m
+[2m    18 × waiting for element to be visible and enabled[22m
+[2m       - did not find some options[22m
+[2m     - retrying select option action[22m
+[2m       - waiting 500ms[22m
+[2m    - waiting for element to be visible and enabled[22m
+[2m    - element is not visible[22m
+[2m  - retrying select option action[22m
+[2m    - waiting 500ms[22m
+
+    at selectOption (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js:12260:32)
+    at async PlaywrightServer.selectOption (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-04-06T18:18:19.033Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-04-06T18:18:19.033Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","Take screenshot with options: ":{"path":"C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\Projekti\\outputs\\teht4\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-04-06T18:18:19.105Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-04-06T18:18:19.121Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.125Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.127Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.130Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.133Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.135Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.138Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.140Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.142Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active context: context=baf6bcae-4931-482d-a1f4-d6dc79afcdec"}
+{"level":30,"time":"2026-04-06T18:18:19.142Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Changing current active page: page=04ea0cfb-6efb-48fc-bd91-3107ca24764a"}
+{"level":30,"time":"2026-04-06T18:18:19.142Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-04-06T18:18:19.145Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-04-06T18:18:19.158Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Removed page=56d9bb9d-4ea4-457e-8403-2eb20483e4e3 from context=baf6bcae-4931-482d-a1f4-d6dc79afcdec page stack"}
+{"level":30,"time":"2026-04-06T18:18:19.160Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Removed page=f1e4241c-8c41-43f0-99f9-d85f531c691d from context=baf6bcae-4931-482d-a1f4-d6dc79afcdec page stack"}
+{"level":30,"time":"2026-04-06T18:18:19.169Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-04-06T18:18:19.174Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.174Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T18:18:19.302Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-04-06T18:18:19.788Z","pid":8096,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method closeAllBrowsers"}

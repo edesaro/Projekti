@@ -13,14 +13,14 @@ form.addEventListener("submit", async (e) => {
     const password = document.getElementById("password").value.trim();
 
     try {
-        const response = await fetch(`${API_URL}/users`, {
+const response = await fetch(`${API_URL}/users`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, email, password })
         });
 
         const data = await response.json(); // Logataan backendin vastaus konsoliin debuggausta varten
-        console.log("Response:", data); // Tämä auttaa näkemään, mitä backend palauttaa, erityisesti virhetilanteissa
+// console.log("Response:", data); // Debug poistettu
 
         if (response.ok) {
             alert("Käyttäjä luotu! Voit nyt kirjautua sisään.");

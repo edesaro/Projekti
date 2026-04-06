@@ -74,3 +74,65 @@ python -m robot -d outputs browser_demo.robot
 - `Type Text` vs `Type Secret` – salasana piilotetaan lokista
 - Selektorit: `id=`, `[name=""]`, `text=`
 - Testiraporttien ohjaaminen `-d outputs` lipulla
+
+---
+
+## 2024-10-XX Tehtävät 4-6 – Lisätestaukset
+
+## 6.4.2026 - Tehtävät 4, 5 ja 6
+
+### Tehtävä 4: Päiväkirjamerkinnän lisäys
+**Status:** ✅ Valmis
+
+**Tehty:**
+- Kirjoitettu Robot Framework -testi joka simuloi käyttäjän toimintaa selaimessa
+- Testi kirjautuu sisään VitalFit-sovellukseen, avaa päiväkirjasivun ja lisää uuden merkinnän
+- Lomakkeelle täytetään nukutut tunnit, olotila ja kommentti
+- Käytetty Browser Library -selektoreita: `css=#newEntryBtn`, `id=sleep`, `id=mood`, `id=comment`
+- Korjattu ongelma: dropdown vaati `index`-valintaa koska ä-kirjain aiheutti enkoodausongelman
+- Tiedosto: `testit/teht4.robot`
+
+**Komennot:**
+```bash
+python -m robot --outputdir outputs/teht4 testit/teht4.robot
+```
+
+**Tulokset:** Testi läpäisty onnistuneesti. Raportti: `outputs/teht4/report.html`
+
+---
+
+### Tehtävä 5: Kirjautuminen .env-tiedostolla
+**Status:** ✅ Valmis
+
+**Tehty:**
+- Luotu `.env`-tiedosto johon käyttäjätunnus ja salasana piilotettu
+- Lisätty `.env` gitignore-listaan jotta tunnukset eivät mene GitHubiin
+- Testi lukee tunnukset ympäristömuuttujista `Get Environment Variable` -keywordilla
+- Tiedosto: `testit/teht5.robot`
+
+**Komennot:**
+```bash
+python -m robot --outputdir outputs/teht5 testit/teht5.robot
+```
+
+**Tulokset:** Testi läpäisty onnistuneesti. Raportti: `outputs/teht5/report.html`
+
+---
+
+### Tehtävä 6: Kirjautuminen CryptoLibraryllä
+**Status:** ✅ Valmis
+
+**Tehty:**
+- Luotu avainpari CryptoLibraryn `generate_key` -komennolla
+- Salattu käyttäjätunnus ja salasana `crypt:...` -muotoon
+- Salatut arvot tallennettu suoraan robot-tiedostoon turvallisesti
+- CryptoLibrary purkaa salauksen automaattisesti testin ajon aikana
+- Tiedosto: `testit/teht6.robot`
+
+**Komennot:**
+```bash
+python -m robot --outputdir outputs/teht6 testit/teht6.robot
+```
+
+**Tulokset:** Testi läpäisty onnistuneesti. Raportti: `outputs/teht6/report.html`
+

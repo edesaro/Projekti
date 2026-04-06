@@ -4,31 +4,21 @@ console.log("login.js loaded");
 
 const form = document.getElementById("loginForm");
 
+import { login } from "./api.js";
+
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    try {
-        const response = await fetch(`${API_URL}/users/login`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ username, password })
-        });
+    const result = await login(username, password);
+    console.log("Login result:", result);
 
-        const data = await response.json();
-        console.log("Login response:", data);
-
-        if (response.ok && data.token) {
-            localStorage.setItem("token", data.token);
-            window.location.href = "home.html";
-        } else {
-            alert(data.error || "Kirjautuminen epäonnistui");
-        }
-
-    } catch (err) {
-        console.error("Fetch error:", err);
-        alert("Yhteysvirhe backendin kanssa");
+    if (result.token) {
+        localStorage.setItem("token", result.token);
+        window.location.href = "home.html";
+    } else {
+        alert(result.error || "Kirjautuminen epäonnistui");
     }
 });
