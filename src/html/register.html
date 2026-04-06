@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Luo käyttäjä</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Luo käyttäjä</h2>
+
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Käyttäjänimi" required>
+            <input type="email" id="email" placeholder="Sähköposti" required>
+            <input type="password" id="password" placeholder="Salasana" required>
+
+            <button type="submit">Rekisteröidy</button>
+        </form>
+
+        <p>
+            Onko sinulla jo tili? <a href="login.html">Kirjaudu sisään</a>
+        </p>
+    </div>
+
+</div>
+
+<script type="module" src="../js/register.js"></script>
+</body>
+</html>

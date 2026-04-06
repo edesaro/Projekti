@@ -1,22 +1,17 @@
-/**
- * Fetches JSON data from APIs
- *
- * @param {string} url - api endpoint url
- * @param {Object} options - request options
- *
- * @returns {Object} response json data
- */
+// src/js/fetch.js koodissa on yleinen fetchData-funktio, jota käytetään API-kutsuihin. Se käsittelee virheitä ja palauttaa joko datan tai virheilmoituksen.
 const fetchData = async (url, options = {}) => {
   try {
     const response = await fetch(url, options);
 
+    const data = await response.json().catch(() => ({}));
+
     if (!response.ok) {
-      const errorData = await response.json();
-      return { error: errorData.message || 'An error occurred' };
+      return { error: data.error || data.message || "An error occurred" };
     }
-    return await response.json(); // Return successful response data
+
+    return data;
   } catch (error) {
-    console.error('fetchData() error:', error.message);
+    console.error("fetchData() error:", error.message);
     return { error: error.message };
   }
 };

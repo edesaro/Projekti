@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-03-24T11:38:56.223142" rpa="false" schemaversion="5">
+<suite id="s1" name="Web Form Test" source="C:\Users\nice.pavliuk\Desktop\Ulla2.0\k2026-hyte-projekti-vite\web_form_test.robot">
+<test id="s1-t1" name="Test Web Form Fields" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-24T11:38:57.100425" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nice.pavliuk\\Desktop\\Ulla2.0\\k2026-hyte-projekti-vite\\outputs\\browser\\traces\\temp\\bf96307f-96b5-4a7a-8ee1-973bd9287039"}</msg>
+<msg time="2026-03-24T11:38:57.159659" level="INFO">Starting Browser process C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52204</msg>
+<msg time="2026-03-24T11:39:00.858136" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nice.pavliuk\\Desktop\\Ulla2.0\\k2026-hyte-projekti-vite\\outputs\\browser\\traces\\temp\\bf96307f-96b5-4a7a-8ee1-973bd9287039"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-24T11:38:57.098786" elapsed="3.759593"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-24T11:39:01.734086" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2026-03-24T11:39:01.734194" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-24T11:39:00.889849" elapsed="0.844553"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-03-24T11:39:01.778888" level="INFO">Title: 'Web form'</msg>
+<arg>==</arg>
+<arg>Web form</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-24T11:39:01.766933" elapsed="0.012123"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-03-24T11:39:01.783944" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
+<arg>[name="my-text"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:01.782466" elapsed="2.404293"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="my-password"]</arg>
+<arg>$Password</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:04.241230" elapsed="1.452493"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-03-24T11:39:05.697014" level="INFO">Types the text 'Hello, Robot Framework!
+How are you today?' in the given field.</msg>
+<arg>[name="my-textarea"]</arg>
+<arg>${Message}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:05.694816" elapsed="4.955637"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-03-24T11:39:10.653490" level="INFO">Selects the option(s) Two by attribute SelectAttribute.label from element [name="my-select"].</msg>
+<arg>[name="my-select"]</arg>
+<arg>text</arg>
+<arg>Two</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:10.651483" elapsed="0.130881"/>
+</kw>
+<kw name="Get Selected Options" owner="Browser">
+<msg time="2026-03-24T11:39:10.842392" level="INFO">entry {
+  value: "Open this select menu"
+  label: "Open this select menu"
+}
+entry {
+  value: "1"
+  label: "One"
+  index: 1
+}
+entry {
+  value: "2"
+  label: "Two"
+  index: 2
+  selected: true
+}
+entry {
+  value: "3"
+  label: "Three"
+  index: 3
+}
+</msg>
+<arg>[name="my-select"]</arg>
+<arg>text</arg>
+<arg>==</arg>
+<arg>Two</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
+<status status="PASS" start="2026-03-24T11:39:10.783366" elapsed="0.059475"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>id=my-check-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:10.844261" elapsed="0.076883"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2026-03-24T11:39:10.966445" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'focused', 'checked']</msg>
+<arg>id=my-check-2</arg>
+<arg>contains</arg>
+<arg>checked</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:10.924078" elapsed="0.042550"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-24T11:39:10.968073" level="INFO">Clicks the element 'id=my-radio-2'.</msg>
+<arg>id=my-radio-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:10.967124" elapsed="0.065448"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2026-03-24T11:39:11.106990" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'focused', 'checked']</msg>
+<arg>id=my-radio-2</arg>
+<arg>contains</arg>
+<arg>checked</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:11.033648" elapsed="0.073718"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-03-24T11:39:11.110452" level="INFO">Types the text 'New York' in the given field.</msg>
+<arg>[name="my-datalist"]</arg>
+<arg>New York</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:11.108349" elapsed="1.004013"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-03-24T11:39:12.115467" level="INFO">Clicks the element 'button'.</msg>
+<arg>button</arg>
+<arg>delay=2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:12.113398" elapsed="2.159429"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-24T11:39:14.331189" level="INFO">Text: 'Received!'</msg>
+<arg>id=message</arg>
+<arg>==</arg>
+<arg>Received!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-24T11:39:14.273603" elapsed="0.057771"/>
+</kw>
+<status status="PASS" start="2026-03-24T11:38:57.088889" elapsed="17.243237"/>
+</test>
+<status status="PASS" start="2026-03-24T11:38:56.237282" elapsed="18.105289"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Web Form Test" id="s1" pass="1" fail="0" skip="0">Web Form Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

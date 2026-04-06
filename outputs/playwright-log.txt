@@ -1,0 +1,33 @@
+{"level":30,"time":"2026-03-24T09:22:17.023Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Listening on 127.0.0.1:52049"}
+{"level":30,"time":"2026-03-24T09:22:17.237Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-24T09:22:17.880Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-24T09:22:17.881Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-24T09:22:17.881Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-24T09:22:17.907Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-24T09:22:17.908Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@09ee69af671ec25c4e2d8e869a42441b\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=3556bbde-2e0b-4921-9e50-7eec3177d2c5\"}"}
+{"level":30,"time":"2026-03-24T09:22:17.959Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Setting default timeout for context context=21243af1-cc2b-4746-9b33-87674f91fb5c to 10000"}
+{"level":30,"time":"2026-03-24T09:22:17.959Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active context: context=21243af1-cc2b-4746-9b33-87674f91fb5c"}
+{"level":30,"time":"2026-03-24T09:22:18.447Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-24T09:22:18.448Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-03-24T09:22:18.618Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-24T09:22:18.682Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:22:18.683Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=username in page."}
+{"level":30,"time":"2026-03-24T09:22:19.207Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:22:19.217Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:22:19.217Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2026-03-24T09:22:19.706Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:22:19.716Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-24T09:22:19.716Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with button in page."}
+{"level":30,"time":"2026-03-24T09:22:19.788Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method click"}
+================= Original suppressed error =================
+page.title: Execution context was destroyed, most likely because of a navigation
+    at getTitle (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js:11966:28)
+    at PlaywrightServer.getTitle (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js:13881:30)
+    at Object.onReceiveHalfClose (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2026-03-24T09:23:03.838Z","pid":8736,"hostname":"LAPTOP-VS82V6FV","msg":"Removed page=283f6bfb-fe06-49f5-aff4-9c054b73a6c2 from context=21243af1-cc2b-4746-9b33-87674f91fb5c page stack"}

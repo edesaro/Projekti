@@ -1,0 +1,58 @@
+{"level":30,"time":"2026-03-24T09:39:00.095Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Listening on 127.0.0.1:52204"}
+{"level":30,"time":"2026-03-24T09:39:00.385Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-24T09:39:00.855Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-24T09:39:00.856Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-24T09:39:00.856Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-24T09:39:00.893Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-24T09:39:00.893Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b9c74f1b2299376af0ee404adeb3d1fb\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=12812223-7949-4cd8-9b94-2f624836aecf\"}"}
+{"level":30,"time":"2026-03-24T09:39:00.963Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Setting default timeout for context context=15549b3f-e8e8-4c11-a032-a752928f3eaf to 10000"}
+{"level":30,"time":"2026-03-24T09:39:00.964Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active context: context=15549b3f-e8e8-4c11-a032-a752928f3eaf"}
+{"level":30,"time":"2026-03-24T09:39:01.354Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-24T09:39:01.354Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-03-24T09:39:01.693Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-24T09:39:01.785Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:01.786Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-03-24T09:39:04.174Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:04.261Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:04.261Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-03-24T09:39:05.690Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:05.700Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:05.700Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2026-03-24T09:39:10.647Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:10.657Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-03-24T09:39:10.657Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-03-24T09:39:10.775Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Option entries: 4"}
+{"level":30,"time":"2026-03-24T09:39:10.775Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-03-24T09:39:10.776Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-03-24T09:39:10.788Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getSelectContent"}
+{"level":30,"time":"2026-03-24T09:39:10.789Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-03-24T09:39:10.839Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Option entries: 4"}
+{"level":30,"time":"2026-03-24T09:39:10.839Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-03-24T09:39:10.839Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getSelectContent"}
+{"level":30,"time":"2026-03-24T09:39:10.849Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2026-03-24T09:39:10.850Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=my-check-2 in page."}
+{"level":30,"time":"2026-03-24T09:39:10.918Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2026-03-24T09:39:10.927Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2026-03-24T09:39:10.927Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=my-check-2 in page."}
+{"level":30,"time":"2026-03-24T09:39:10.944Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Element id=my-check-2 is editable: true"}
+{"level":30,"time":"2026-03-24T09:39:10.944Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Checking checked state"}
+{"level":30,"time":"2026-03-24T09:39:10.964Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getElementStates"}
+{"level":30,"time":"2026-03-24T09:39:10.970Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-24T09:39:10.970Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=my-radio-2 in page."}
+{"level":30,"time":"2026-03-24T09:39:11.030Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method click"}
+{"level":30,"time":"2026-03-24T09:39:11.041Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2026-03-24T09:39:11.041Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=my-radio-2 in page."}
+{"level":30,"time":"2026-03-24T09:39:11.077Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Element id=my-radio-2 is editable: true"}
+{"level":30,"time":"2026-03-24T09:39:11.077Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Checking checked state"}
+{"level":30,"time":"2026-03-24T09:39:11.104Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getElementStates"}
+{"level":30,"time":"2026-03-24T09:39:11.112Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:11.112Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2026-03-24T09:39:12.110Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T09:39:12.117Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-24T09:39:12.118Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with button in page."}
+{"level":30,"time":"2026-03-24T09:39:14.271Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method click"}
+{"level":30,"time":"2026-03-24T09:39:14.275Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-24T09:39:14.275Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Strict mode is enabled, find Locator with id=message in page."}
+{"level":30,"time":"2026-03-24T09:39:14.329Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Retrieved text for element id=message containing Received!"}
+{"level":30,"time":"2026-03-24T09:39:14.329Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-24T09:39:18.208Z","pid":26528,"hostname":"LAPTOP-VS82V6FV","msg":"Removed page=47db9a2c-0b18-4b58-b92b-059ca0710e02 from context=15549b3f-e8e8-4c11-a032-a752928f3eaf page stack"}
