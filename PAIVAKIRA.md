@@ -79,7 +79,8 @@ python -m robot -d outputs browser_demo.robot
 
 ## 2024-10-XX Tehtävät 4-6 – Lisätestaukset
 
-## 6.4.2026 - Tehtävät 4, 5 ja 6
+## 5.4.2026 - Tehtävät 4, 5 ja 6
+kaikki testit löytyvät testit kansiossa
 
 ### Tehtävä 4: Päiväkirjamerkinnän lisäys
 **Status:** ✅ Valmis
