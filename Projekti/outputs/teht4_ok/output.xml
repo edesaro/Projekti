@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-06T20:26:55.698190" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtava4 Paivakirja Test" source="C:\Users\nice.pavliuk\Sakarin harjoitukset\Projekti\tehtava4_paivakirja_test.robot">
+<test id="s1-t1" name="Luonti päiväkirjamerkintä" line="9">
+<kw name="Open Browser To VitalFit" owner="Keywords" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-06T20:26:56.339578" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\Projekti\\outputs\\teht4_ok\\browser\\traces\\temp\\4225c937-6d24-4358-9576-49b395c80752"}</msg>
+<msg time="2026-04-06T20:26:56.384501" level="INFO">Starting Browser process C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js using at 127.0.0.1:59144</msg>
+<msg time="2026-04-06T20:26:59.395580" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\Projekti\\outputs\\teht4_ok\\browser\\traces\\temp\\4225c937-6d24-4358-9576-49b395c80752"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-06T20:26:56.338650" elapsed="3.057133"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-06T20:27:00.137574" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
+<msg time="2026-04-06T20:27:00.137664" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${VITE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-06T20:26:59.396058" elapsed="0.741782"/>
+</kw>
+<status status="PASS" start="2026-04-06T20:26:56.337717" elapsed="3.800296"/>
+</kw>
+<kw name="Login" owner="Keywords">
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-06T20:27:00.641216" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<arg>${VITE_URL}/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-06T20:27:00.304367" elapsed="0.337068"/>
+</kw>
+<arg>${TEST_USERNAME}</arg>
+<arg>${TEST_PASSWORD}</arg>
+<status status="PASS" start="2026-04-06T20:27:00.303692" elapsed="0.337903"/>
+</kw>
+<kw name="Go To" owner="Keywords">
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-06T20:27:00.930065" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/paivakirja.html</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-06T20:27:00.659556" elapsed="0.270733"/>
+</kw>
+<arg>${PAIVAKIRJA_URL}</arg>
+<status status="PASS" start="2026-04-06T20:27:00.658210" elapsed="0.272228"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Keywords">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-06T20:27:00.990629" level="FAIL">ValueError: Argument 'state' got value '10s' that cannot be converted to ElementState: ElementState does not have member '10s'. Available: 'attached (1)', 'checked (4096)', 'defocused (2048)', 'deselected (512)', 'detached (2)', 'disabled (32)', 'editable (64)', 'enabled (16)', 'focused (1024)', 'hidden (8)', 'readonly (128)', 'selected (256)', 'stable (16384)', 'unchecked (8192)' and 'visible (4)'</msg>
+<arg>body:text="${text}"</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-04-06T20:27:00.989687" elapsed="0.060089">ValueError: Argument 'state' got value '10s' that cannot be converted to ElementState: ElementState does not have member '10s'. Available: 'attached (1)', 'checked (4096)', 'defocused (2048)', 'deselected (512)', 'detached (2)', 'disabled (32)', 'editable (64)', 'enabled (16)', 'focused (1024)', 'hidden (8)', 'readonly (128)', 'selected (256)', 'stable (16384)', 'unchecked (8192)' and 'visible (4)'</status>
+</kw>
+<arg>Päiväkirja</arg>
+<status status="FAIL" start="2026-04-06T20:27:00.989120" elapsed="0.060982">ValueError: Argument 'state' got value '10s' that cannot be converted to ElementState: ElementState does not have member '10s'. Available: 'attached (1)', 'checked (4096)', 'defocused (2048)', 'deselected (512)', 'detached (2)', 'disabled (32)', 'editable (64)', 'enabled (16)', 'focused (1024)', 'hidden (8)', 'readonly (128)', 'selected (256)', 'stable (16384)', 'unchecked (8192)' and 'visible (4)'</status>
+</kw>
+<kw name="Click" owner="Keywords">
+<arg>css:.new-entry-btn</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.051998" elapsed="0.000225"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="Keywords">
+<arg>css:#newEntryForm</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.053498" elapsed="0.000243"/>
+</kw>
+<kw name="Fill Weight" owner="Keywords">
+<arg>75.5</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.054214" elapsed="0.000207"/>
+</kw>
+<kw name="Fill Sleep Hours" owner="Keywords">
+<arg>7.5</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.055348" elapsed="0.000217"/>
+</kw>
+<kw name="Fill Condition" owner="Keywords">
+<arg>erinomainen</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.055930" elapsed="0.000190"/>
+</kw>
+<kw name="Fill Comment" owner="Keywords">
+<arg>Testimerkintä - BLACKBOXAI</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.062916" elapsed="0.000238"/>
+</kw>
+<kw name="Click" owner="Keywords">
+<arg>css:#calculateBMI</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.064157" elapsed="0.000223"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Keywords">
+<arg>BMI: 24.6</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.064979" elapsed="0.000221"/>
+</kw>
+<kw name="Click" owner="Keywords">
+<arg>css:#saveEntryBtn</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.066064" elapsed="0.000672"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Keywords">
+<arg>Merkintä tallennettu!</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.069038" elapsed="0.000283"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="Keywords">
+<arg>css:.entry-box:last-child</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.070309" elapsed="0.000248"/>
+</kw>
+<kw name="Entry Box Should Contain" owner="Keywords">
+<arg>Testimerkintä - BLACKBOXAI</arg>
+<status status="NOT RUN" start="2026-04-06T20:27:01.073172" elapsed="0.000248"/>
+</kw>
+<kw name="Close Browser" owner="Keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<kw name="Close Browser" owner="Keywords">
+<msg time="2026-04-06T20:27:01.171871" level="FAIL">Recursive execution stopped.</msg>
+<status status="FAIL" start="2026-04-06T20:27:01.171232" elapsed="0.000696">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.170803" elapsed="0.001553">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.170016" elapsed="0.002883">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.169043" elapsed="0.004265">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.168629" elapsed="0.005120">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.168209" elapsed="0.005920">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.167792" elapsed="0.006714">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.167378" elapsed="0.009598">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.166963" elapsed="0.011235">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.166541" elapsed="0.012157">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.166088" elapsed="0.013131">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.165458" elapsed="0.014543">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.165008" elapsed="0.015507">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.164593" elapsed="0.016357">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.164140" elapsed="0.017191">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.163625" elapsed="0.018169">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.162527" elapsed="0.019655">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.162010" elapsed="0.020678">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.161521" elapsed="0.021526">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.160832" elapsed="0.022574">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.158161" elapsed="0.025613">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.157732" elapsed="0.026406">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.157320" elapsed="0.027267">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.156907" elapsed="0.028059">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.156496" elapsed="0.028807">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.156073" elapsed="0.029567">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.155647" elapsed="0.030337">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.155172" elapsed="0.031147">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.154747" elapsed="0.031908">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.153957" elapsed="0.033116">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.153408" elapsed="0.034096">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.153002" elapsed="0.034845">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.152582" elapsed="0.035587">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.152160" elapsed="0.036335">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.151741" elapsed="0.037072">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.151308" elapsed="0.037822">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.150801" elapsed="0.038653">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.150186" elapsed="0.039583">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.149763" elapsed="0.040316">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.149345" elapsed="0.041043">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.148916" elapsed="0.041780">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.148487" elapsed="0.042512">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.147791" elapsed="0.043609">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.146936" elapsed="0.046445">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.146475" elapsed="0.047739">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.145984" elapsed="0.048716">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.145494" elapsed="0.049535">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.144913" elapsed="0.050599">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.143942" elapsed="0.052108">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.141005" elapsed="0.055383">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.140387" elapsed="0.056309">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.139894" elapsed="0.057100">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.139357" elapsed="0.057932">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.138929" elapsed="0.058655">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.138433" elapsed="0.059444">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.137755" elapsed="0.060500">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.136139" elapsed="0.062426">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.135185" elapsed="0.063801">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.134759" elapsed="0.064510">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.134338" elapsed="0.065212">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.133911" elapsed="0.065911">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.133477" elapsed="0.066615">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.133039" elapsed="0.067339">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.132595" elapsed="0.068052">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.132125" elapsed="0.068792">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.131671" elapsed="0.069508">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.131209" elapsed="0.070245">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.130731" elapsed="0.070986">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.130191" elapsed="0.071785">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.129276" elapsed="0.073045">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.128643" elapsed="0.073998">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.128135" elapsed="0.074771">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.127280" elapsed="0.075878">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.124294" elapsed="0.079118">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.123799" elapsed="0.079861">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.123319" elapsed="0.080587">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.122788" elapsed="0.081358">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.122142" elapsed="0.082244">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.121546" elapsed="0.083081">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.120709" elapsed="0.084154">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.119472" elapsed="0.085629">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.118961" elapsed="0.086377">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.118145" elapsed="0.087520">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.117297" elapsed="0.088615">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.116864" elapsed="0.089316">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.116434" elapsed="0.090003">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.116008" elapsed="0.090653">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.115567" elapsed="0.091317">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.115109" elapsed="0.091991">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.114611" elapsed="0.092731">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.114141" elapsed="0.093423">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.113684" elapsed="0.094093">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.113202" elapsed="0.094786">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.112672" elapsed="0.096947">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.111932" elapsed="0.098137">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.108139" elapsed="0.102535">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.106930" elapsed="0.104056">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.106345" elapsed="0.104995">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.105772" elapsed="0.105779">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.105209" elapsed="0.106550">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.104789" elapsed="0.107184">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.104365" elapsed="0.107840">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.103931" elapsed="0.108552">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.103464" elapsed="0.109212">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.102979" elapsed="0.109884">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.102503" elapsed="0.110548">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.102058" elapsed="0.111179">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.101580" elapsed="0.111842">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.101028" elapsed="0.112573">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.099686" elapsed="0.115076">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.098277" elapsed="0.116714">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.097851" elapsed="0.117356">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.097421" elapsed="0.117963">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.097001" elapsed="0.118560">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.096567" elapsed="0.119168">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.096125" elapsed="0.119775">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.095669" elapsed="0.120393">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.095204" elapsed="0.121018">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.094709" elapsed="0.121677">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.094179" elapsed="0.122364">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.093460" elapsed="0.123243">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.090946" elapsed="0.125913">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.090094" elapsed="0.127560">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.089004" elapsed="0.128827">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.088510" elapsed="0.129497">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.088068" elapsed="0.130089">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.087623" elapsed="0.130688">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.087150" elapsed="0.131305">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.086676" elapsed="0.131922">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.086193" elapsed="0.132549">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.085689" elapsed="0.133191">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.085191" elapsed="0.133829">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.084674" elapsed="0.134481">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.084049" elapsed="0.135242">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.083189" elapsed="0.136233">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.082334" elapsed="0.137258">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.081397" elapsed="0.138388">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.080819" elapsed="0.139156">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.080362" elapsed="0.139743">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.079931" elapsed="0.140300">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.079474" elapsed="0.140881">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.078985" elapsed="0.141490">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.078499" elapsed="0.142096">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.078019" elapsed="0.142691">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.077427" elapsed="0.143399">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.074551" elapsed="0.146386">Recursive execution stopped.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:27:01.073938" elapsed="0.147107">Recursive execution stopped.</status>
+</kw>
+<msg time="2026-04-06T20:27:01.247583" level="INFO">Switching context to context=593e8bc7-4b69-49c8-a822-da4d513961ce in CURRENT</msg>
+<msg time="2026-04-06T20:27:01.260690" level="INFO">Successfully changed active context: context=593e8bc7-4b69-49c8-a822-da4d513961ce</msg>
+<msg time="2026-04-06T20:27:01.288531" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-04-06T20:26:56.336586" elapsed="4.884835">ValueError: Argument 'state' got value '10s' that cannot be converted to ElementState: ElementState does not have member '10s'. Available: 'attached (1)', 'checked (4096)', 'defocused (2048)', 'deselected (512)', 'detached (2)', 'disabled (32)', 'editable (64)', 'enabled (16)', 'focused (1024)', 'hidden (8)', 'readonly (128)', 'selected (256)', 'stable (16384)', 'unchecked (8192)' and 'visible (4)'
+
+Also teardown failed:
+Recursive execution stopped.</status>
+</test>
+<doc>Tehtävä 4: Päiväkirjamerkinnän luonti E2E testi</doc>
+<status status="FAIL" start="2026-04-06T20:26:55.701094" elapsed="5.589533"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tehtava4 Paivakirja Test" id="s1" pass="0" fail="1" skip="0">Tehtava4 Paivakirja Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

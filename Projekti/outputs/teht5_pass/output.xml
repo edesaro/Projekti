@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-06T20:55:49.441330" rpa="false" schemaversion="5">
+<suite id="s1" name="Teht5" source="C:\Users\nice.pavliuk\Sakarin harjoitukset\Projekti\teht5.robot">
+<test id="s1-t1" name="Kirjautuminen VitalFit" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-06T20:55:50.013754" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\Projekti\\outputs\\teht5_pass\\browser\\traces\\temp\\019eb34c-3620-4cdc-b411-726972df653d"}</msg>
+<msg time="2026-04-06T20:55:50.053320" level="INFO">Starting Browser process C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60293</msg>
+<msg time="2026-04-06T20:55:52.489880" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\Projekti\\outputs\\teht5_pass\\browser\\traces\\temp\\019eb34c-3620-4cdc-b411-726972df653d"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-06T20:55:50.012725" elapsed="2.477430"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-06T20:55:53.028416" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/src/html/login.html</msg>
+<msg time="2026-04-06T20:55:53.028521" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/src/html/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-06T20:55:52.515672" elapsed="0.513042"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-06T20:55:53.037586" level="INFO">Types the text 'dada' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-06T20:55:53.036663" elapsed="0.550635"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>id=password</arg>
+<arg>$Password</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-06T20:55:53.588261" elapsed="0.861713"/>
+</kw>
+<kw name="Click" owner="Keywords">
+<kw name="Click" owner="Browser">
+<msg time="2026-04-06T20:55:54.537123" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-06T20:55:54.536450" elapsed="0.849240"/>
+</kw>
+<arg>button[type="submit"]</arg>
+<status status="PASS" start="2026-04-06T20:55:54.535784" elapsed="0.850103"/>
+</kw>
+<msg time="2026-04-06T20:55:55.507227" level="INFO">Switching context to context=f9089505-487b-41b1-baad-ceec6769ba82 in CURRENT</msg>
+<msg time="2026-04-06T20:55:55.549544" level="INFO">Successfully changed active context: context=f9089505-487b-41b1-baad-ceec6769ba82</msg>
+<msg time="2026-04-06T20:55:55.584221" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-04-06T20:55:50.011253" elapsed="5.386238"/>
+</test>
+<test id="s1-t2" name="Get Location" line="16">
+<kw>
+<msg time="2026-04-06T20:55:55.648691" level="FAIL">Keyword name cannot be empty.</msg>
+<var>${loc}</var>
+<status status="FAIL" start="2026-04-06T20:55:55.648473" elapsed="0.000300">Keyword name cannot be empty.</status>
+</kw>
+<status status="FAIL" start="2026-04-06T20:55:55.645837" elapsed="0.003559">Keyword name cannot be empty.</status>
+</test>
+<test id="s1-t3" name="Should Contain" line="17">
+<kw name="home.html">
+<msg time="2026-04-06T20:55:55.658069" level="FAIL">No keyword with name 'home.html' found.</msg>
+<var>${loc}</var>
+<status status="FAIL" start="2026-04-06T20:55:55.657851" elapsed="0.000299">No keyword with name 'home.html' found.</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2026-04-06T20:55:55.658497" elapsed="0.000502"/>
+</kw>
+<kw name="Close Browser" owner="Keywords">
+<status status="NOT RUN" start="2026-04-06T20:55:55.662286" elapsed="0.000209"/>
+</kw>
+<status status="FAIL" start="2026-04-06T20:55:55.654197" elapsed="0.008805">No keyword with name 'home.html' found.</status>
+</test>
+<status status="FAIL" start="2026-04-06T20:55:49.446664" elapsed="6.221089"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teht5" id="s1" pass="1" fail="2" skip="0">Teht5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

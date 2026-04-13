@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Laskuri</title>
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">VitalFit</div>
+
+  <div class="nav-right">
+    <a href="home.html">Koti</a>
+    <a href="bmi.html" class="active">BMI Laskuri</a>
+    <a href="paivakirja.html">Päiväkirja</a>
+    <button id="logoutBtn" class="logout-btn">Kirjaudu ulos</button>
+  </div>
+</nav>
+
+<main>
+    
+  <div class="page-container fade-in-up">
+
+    <h2>Painoindeksi (BMI)</h2>
+    <p>Painoindeksi kertoo painon ja pituuden suhteesta. Syötä tietosi alle.</p>
+
+    <div class="hero-split">
+
+      <!-- KUVA -->
+      <img src="../images/bmi.jpg" alt="BMI kuva" class="hero-img">
+
+      <!-- LASKURI -->
+      <div class="hero-text">
+
+        <h3>Laske oma BMI</h3>
+
+        <label>Paino (kg)</label>
+        <input type="number" id="weight" placeholder="esim. 75" min="20" max="250" step="0.1">
+
+        <label>Pituus (cm)</label>
+        <input type="number" id="height" placeholder="esim. 175" min="100" max="250" step="0.1">
+
+        <a class="big-btn calculate-btn">Laske BMI</a>
+
+        <div class="bmi-result">
+          <p>BMI-tuloksesi:</p>
+          <h3 class="bmi-score">-</h3>
+
+          <table class="bmi-table">
+            <tr class="bmi-range underweight"><td>Alipaino</td><td>&lt; 18.5</td></tr>
+            <tr class="bmi-range normal"><td>Normaali</td><td>18.5 – 24.9</td></tr>
+            <tr class="bmi-range overweight"><td>Ylipaino</td><td>25.0 – 29.9</td></tr>
+            <tr class="bmi-range obese"><td>Lihavuus</td><td>30.0 – 34.9</td></tr>
+          </table>
+
+          <p class="analysis-title">Arvio:</p>
+          <p class="analysis-text">Syötä painosi ja pituutesi saadaksesi arvion.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 VitalFit Studio
+</footer>
+
+<script type="module" src="../js/logout.js"></script>
+<script src="../js/bmi.js"></script>
+
+</body>
+</html>

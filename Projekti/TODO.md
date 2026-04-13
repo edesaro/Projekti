@@ -1,0 +1,1 @@
+# Task: Embed https://edesaro.github.io/Projekti into Projekti/README.md without separate HTML file\n\n## Steps:\n- [x] Step 1: Create/update Projekti/README.md with iframe embed\n- [x] Step 2: Verify the change\n- [x] Step 3: Complete task\n\nTask completed.

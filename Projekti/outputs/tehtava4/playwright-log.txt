@@ -1,0 +1,36 @@
+{"level":30,"time":"2026-04-06T15:57:58.540Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Listening on 127.0.0.1:55156"}
+{"level":30,"time":"2026-04-06T15:57:58.744Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-06T15:57:59.102Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-06T15:57:59.102Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-06T15:57:59.102Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-06T15:57:59.108Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-06T15:57:59.108Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@75b0bf21410a8282cc66a662a49dd61d\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=4cf43092-e54a-4981-91de-c26df39b1acc\"}"}
+{"level":30,"time":"2026-04-06T15:57:59.122Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Setting default timeout for context context=b95461da-1138-443e-9e0b-ad503d66837b to 10000"}
+{"level":30,"time":"2026-04-06T15:57:59.122Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active context: context=b95461da-1138-443e-9e0b-ad503d66837b"}
+{"level":30,"time":"2026-04-06T15:57:59.425Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-06T15:57:59.425Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-04-06T15:57:59.644Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-06T15:57:59.652Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-06T15:57:59.652Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@75b0bf21410a8282cc66a662a49dd61d\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=b95461da-1138-443e-9e0b-ad503d66837b\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@1fa0c691d1d3207ce57c3a5bc1d3b60c\"},\"pageStack\":[{\"id\":\"page=557c8fa7-af16-419a-936f-1cd3da2d358a\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@02bac3facbd33ebb15e1a617844b8ef1\"},\"timestamp\":1775491079.425,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"debug\",\"text\":\"[vite] connecting...\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":732,\"columnNumber\":8},\"time\":\"2026-04-06T15:57:59.644Z\"},{\"type\":\"debug\",\"text\":\"[vite] connected.\",\"location\":{\"url\":\"http://localhost:5173/@vite/client\",\"lineNumber\":826,\"columnNumber\":11},\"time\":\"2026-04-06T15:57:59.646Z\"},{\"type\":\"error\",\"text\":\"Failed to load resource: the server responded with a status of 404 (Not Found)\",\"location\":{\"url\":\"http://localhost:5173/favicon.ico\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2026-04-06T15:57:59.646Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"traceFile\":\"\"}],\"id\":\"browser=4cf43092-e54a-4981-91de-c26df39b1acc\"}"}
+{"level":30,"time":"2026-04-06T15:57:59.837Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-06T15:57:59.837Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-04-06T15:57:59.921Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-06T15:58:00.131Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.293Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.295Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.298Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.300Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.302Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.306Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.317Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.320Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active context: context=b95461da-1138-443e-9e0b-ad503d66837b"}
+{"level":30,"time":"2026-04-06T15:58:00.320Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Changing current active page: page=10032b84-15a1-4ab9-8dc3-7ec4c6e1b1c1"}
+{"level":30,"time":"2026-04-06T15:58:00.320Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Changed active page"}
+{"level":30,"time":"2026-04-06T15:58:00.324Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-04-06T15:58:00.333Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Removed page=a573e899-4a66-46c7-be37-83a10548bd71 from context=b95461da-1138-443e-9e0b-ad503d66837b page stack"}
+{"level":30,"time":"2026-04-06T15:58:00.336Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Removed page=ec9cca7d-3b02-4ba2-8ebd-1e3206053063 from context=b95461da-1138-443e-9e0b-ad503d66837b page stack"}
+{"level":30,"time":"2026-04-06T15:58:00.343Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-04-06T15:58:00.379Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.379Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-06T15:58:00.675Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-04-06T15:58:01.364Z","pid":23948,"hostname":"LAPTOP-VS82V6FV","msg":"End of node method closeAllBrowsers"}
