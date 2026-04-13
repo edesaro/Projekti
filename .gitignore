@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sensitive
+.env
+
+# Test outputs and builds
+outputs/
+**/outputs/
+**/node_modules/
+Projekti-Matti-server-26/dist/
+Projekti-Matti-server-26/*.log

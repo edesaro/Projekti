@@ -74,3 +74,18 @@ python -m robot -d outputs browser_demo.robot
 - `Type Text` vs `Type Secret` – salasana piilotetaan lokista
 - Selektorit: `id=`, `[name=""]`, `text=`
 - Testiraporttien ohjaaminen `-d outputs` lipulla
+
+---
+
+## Robot Framework -testiraportit
+
+### Tehtävä 4 - Päiväkirja-testit
+ [Tehtävä 4 Raportti](Projekti/outputs/teht4/report.html)
+
+### Tehtävä 5 - Testit
+ [Tehtävä 5 Raportti](Projekti/outputs/teht5/report.html)
+
+### Tehtävä 6 - Testit
+📊[Tehtävä 6 Raportti](Projekti/outputs/teht6/report.html)
+
+---
