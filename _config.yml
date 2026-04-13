@@ -1,0 +1,4 @@
+theme: jekyll-theme-primer
+title: "Päiväkirja - Ulla2.0"
+include:
+  - "*.html"
