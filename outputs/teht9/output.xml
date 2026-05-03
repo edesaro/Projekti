@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-05-03T22:18:52.333858" rpa="false" schemaversion="5">
+<suite id="s1" name="Teht9" source="C:\Users\nice.pavliuk\Sakarin harjoitukset\testit\teht9.robot">
+<test id="s1-t1" name="POST Login onnistuu oikeilla tunnuksilla" line="9">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-05-03T22:18:54.206501" level="INFO">Creating Session using : alias=api, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-05-03T22:18:54.206249" elapsed="0.000485"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-05-03T22:18:54.207713" level="INFO">${body} = {'username': 'testi', 'password': 'testi123'}</msg>
+<var>${body}</var>
+<arg>username=testi</arg>
+<arg>password=testi123</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-05-03T22:18:54.207084" elapsed="0.000673"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-05-03T22:18:54.256930" level="INFO">POST Request : url=http://localhost:3000/users/login 
+ path_url=/users/login 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '45', 'Content-Type': 'application/json'} 
+ body=b'{"username": "testi", "password": "testi123"}' 
+ </msg>
+<msg time="2026-05-03T22:18:54.257058" level="INFO">POST Response : url=http://localhost:3000/users/login 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '215', 'ETag': 'W/"d7-wj2jcZGg+QVVnam6Rk6emk2SLAw"', 'Date': 'Sun, 03 May 2026 19:18:54 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoidGVzdGkiLCJpYXQiOjE3Nzc4MzU5MzQsImV4cCI6MTc3NzgzOTUzNH0.DX6PRGa9BOUZvxoqVk91pvRv_Fs71Lxi36CJgJpShTw","user":{"id":1,"username":"testi"}} 
+ </msg>
+<msg time="2026-05-03T22:18:54.257209" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/users/login</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-05-03T22:18:54.208050" elapsed="0.049195"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2026-05-03T22:18:54.258600" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-05-03T22:18:54.257747" elapsed="0.000937"/>
+</kw>
+<status status="PASS" start="2026-05-03T22:18:54.205206" elapsed="0.053868"/>
+</test>
+<test id="s1-t2" name="POST Login epäonnistuu väärillä tunnuksilla" line="15">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-05-03T22:18:54.260914" level="INFO">Creating Session using : alias=api, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-05-03T22:18:54.260621" elapsed="0.000468"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-05-03T22:18:54.261925" level="INFO">${body} = {'username': 'vaara', 'password': 'vaara123'}</msg>
+<var>${body}</var>
+<arg>username=vaara</arg>
+<arg>password=vaara123</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-05-03T22:18:54.261413" elapsed="0.000548"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-05-03T22:18:54.268569" level="INFO">POST Request : url=http://localhost:3000/users/login 
+ path_url=/users/login 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '45', 'Content-Type': 'application/json'} 
+ body=b'{"username": "vaara", "password": "vaara123"}' 
+ </msg>
+<msg time="2026-05-03T22:18:54.268675" level="INFO">POST Response : url=http://localhost:3000/users/login 
+ status=401, reason=Unauthorized 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '55', 'ETag': 'W/"37-g8L7kZXN/asy+j1LlzfQCnvRt7Q"', 'Date': 'Sun, 03 May 2026 19:18:54 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"error":"Virheellinen käyttäjätunnus tai salasana"} 
+ </msg>
+<msg time="2026-05-03T22:18:54.268854" level="INFO">${response} = &lt;Response [401]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/users/login</arg>
+<arg>json=${body}</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-05-03T22:18:54.262246" elapsed="0.006644"/>
+</kw>
+<kw name="Should Not Be Equal As Strings" owner="BuiltIn">
+<msg time="2026-05-03T22:18:54.270821" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<status status="PASS" start="2026-05-03T22:18:54.270014" elapsed="0.000893"/>
+</kw>
+<status status="PASS" start="2026-05-03T22:18:54.260035" elapsed="0.011201"/>
+</test>
+<status status="PASS" start="2026-05-03T22:18:52.336888" elapsed="1.935131"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teht9" id="s1" pass="2" fail="0" skip="0">Teht9</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

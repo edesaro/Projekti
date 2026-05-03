@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-05-03T23:15:55.061025" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtt4" source="C:\Users\nice.pavliuk\Sakarin harjoitukset\Projekti\testit\tehtt4.robot">
+<test id="s1-t1" name="Uuden päiväkirjamerkinnän lisäys" line="11">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-05-03T23:15:55.789879" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\outputs\\tehtt4\\browser\\traces\\temp\\8949b0bc-4874-4451-9e07-d088e87868c8"}</msg>
+<msg time="2026-05-03T23:15:55.835029" level="INFO">Starting Browser process C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js using at 127.0.0.1:55324</msg>
+<msg time="2026-05-03T23:15:58.069293" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\outputs\\tehtt4\\browser\\traces\\temp\\8949b0bc-4874-4451-9e07-d088e87868c8"}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-05-03T23:15:55.788875" elapsed="2.280629"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-05-03T23:15:58.594258" level="INFO">Successfully initialized new page object and opened url: http://localhost:5500</msg>
+<msg time="2026-05-03T23:15:58.594376" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-05-03T23:15:58.070409" elapsed="0.524266"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-03T23:15:58.598355" level="INFO">Fills the text 'testi' in the given field.</msg>
+<msg time="2026-05-03T23:16:08.730503" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-03T23:16:08.730683" level="INFO">See also file:///C:/Users/nice.pavliuk/Sakarin%20harjoitukset/outputs/tehtt4/playwright-log.txt for additional details.</msg>
+<msg time="2026-05-03T23:16:08.731085" level="FAIL">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=username')
+    - waiting for" http://localhost:5500/PAIVAKIRA.md" navigation to finish...
+    - navigated to "http://localhost:5500/PAIVAKIRA.md"
+</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="FAIL" start="2026-05-03T23:15:58.597439" elapsed="10.140855">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=username')
+    - waiting for" http://localhost:5500/PAIVAKIRA.md" navigation to finish...
+    - navigated to "http://localhost:5500/PAIVAKIRA.md"
+</status>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.738804" elapsed="0.000265"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>id=loginBtn</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.739443" elapsed="0.000274"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id=newEntryBtn</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.740419" elapsed="0.000286"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>id=newEntryBtn</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.741205" elapsed="0.000273"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id=sleep</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.742040" elapsed="0.000368"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=sleep</arg>
+<arg>7</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.742903" elapsed="0.000292"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<arg>id=mood</arg>
+<arg>value</arg>
+<arg>3</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.743921" elapsed="0.000213"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=comment</arg>
+<arg>Automaattitesti</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.744424" elapsed="0.000251"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>id=submitBtn</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.745009" elapsed="0.000188"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-03T23:16:08.745480" elapsed="0.000180"/>
+</kw>
+<msg time="2026-05-03T23:16:08.763851" level="INFO">Switching context to context=906122f1-8258-46d5-bde5-0827cb9b008d in CURRENT</msg>
+<msg time="2026-05-03T23:16:08.772374" level="INFO">Successfully changed active context: context=906122f1-8258-46d5-bde5-0827cb9b008d</msg>
+<msg time="2026-05-03T23:16:08.783778" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-05-03T23:15:55.787453" elapsed="12.958740">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=username')
+    - waiting for" http://localhost:5500/PAIVAKIRA.md" navigation to finish...
+    - navigated to "http://localhost:5500/PAIVAKIRA.md"
+</status>
+</test>
+<status status="FAIL" start="2026-05-03T23:15:55.064277" elapsed="13.720719"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tehtt4" id="s1" pass="0" fail="1" skip="0">Tehtt4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

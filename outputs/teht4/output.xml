@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-06T21:18:04.139986" rpa="false" schemaversion="5">
-<suite id="s1" name="Teht4" source="C:\Users\nice.pavliuk\Sakarin harjoitukset\Projekti\testit\teht4.robot">
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-05-03T23:06:49.260936" rpa="false" schemaversion="5">
+<suite id="s1" name="Teht4" source="C:\Users\nice.pavliuk\Sakarin harjoitukset\testit\teht4.robot">
 <test id="s1-t1" name="Uuden Paivakirjamerkinnan Lisays" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-04-06T21:18:04.940774" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\Projekti\\outputs\\teht4\\browser\\traces\\temp\\574c523b-4696-4ec4-a419-ceea78bc9b48"}</msg>
-<msg time="2026-04-06T21:18:04.981462" level="INFO">Starting Browser process C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61260</msg>
-<msg time="2026-04-06T21:18:06.923755" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\Projekti\\outputs\\teht4\\browser\\traces\\temp\\574c523b-4696-4ec4-a419-ceea78bc9b48"}</msg>
+<msg time="2026-05-03T23:06:50.255015" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\outputs\\teht4\\browser\\traces\\temp\\39c060ac-281a-4f58-88c8-7e9d5876007e"}</msg>
+<msg time="2026-05-03T23:06:50.297432" level="INFO">Starting Browser process C:\Users\nice.pavliuk\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js using at 127.0.0.1:54972</msg>
+<msg time="2026-05-03T23:06:53.414540" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\nice.pavliuk\\Sakarin harjoitukset\\outputs\\teht4\\browser\\traces\\temp\\39c060ac-281a-4f58-88c8-7e9d5876007e"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-04-06T21:18:04.939438" elapsed="1.984530"/>
+<status status="PASS" start="2026-05-03T23:06:50.253734" elapsed="3.161022"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-04-06T21:18:07.535859" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/src/html/login.html</msg>
-<msg time="2026-04-06T21:18:07.535953" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-03T23:06:56.333455" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-05-03T23:06:56.333628" level="INFO">See also file:///C:/Users/nice.pavliuk/Sakarin%20harjoitukset/outputs/teht4/playwright-log.txt for additional details.</msg>
+<msg time="2026-05-03T23:06:56.334058" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/src/html/login.html
+Call log:
+  - navigating to "http://localhost:5173/src/html/login.html", waiting until "load"
+</msg>
 <arg>http://localhost:5173/src/html/login.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-04-06T21:18:06.947703" elapsed="0.588425"/>
+<status status="FAIL" start="2026-05-03T23:06:53.426750" elapsed="3.096835">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/src/html/login.html
+Call log:
+  - navigating to "http://localhost:5173/src/html/login.html", waiting until "load"
+</status>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-04-06T21:18:07.539766" level="INFO">Types the text 'testi' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${Username}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-04-06T21:18:07.538855" elapsed="0.649288"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.531536" elapsed="0.000202"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>id=password</arg>
@@ -39,118 +46,44 @@
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2026-04-06T21:18:08.188955" elapsed="0.071708"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.536488" elapsed="0.000257"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-04-06T21:18:08.262249" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-04-06T21:18:08.261199" elapsed="0.049576"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.538305" elapsed="0.000213"/>
 </kw>
 <kw name="Go To" owner="Keywords">
-<kw name="New Page" owner="Browser">
-<msg time="2026-04-06T21:18:08.468044" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/src/html/paivakirja.html</msg>
-<arg>${url}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2026-04-06T21:18:08.311917" elapsed="0.156353"/>
-</kw>
 <arg>http://localhost:5173/src/html/paivakirja.html</arg>
-<status status="PASS" start="2026-04-06T21:18:08.311275" elapsed="0.157203"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.552329" elapsed="0.000241"/>
 </kw>
 <kw name="Click" owner="Keywords">
-<kw name="Click" owner="Browser">
-<msg time="2026-04-06T21:18:08.470436" level="INFO">Clicks the element 'css=#newEntryBtn'.</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-04-06T21:18:08.469548" elapsed="0.172455"/>
-</kw>
 <arg>css=#newEntryBtn</arg>
-<status status="PASS" start="2026-04-06T21:18:08.468892" elapsed="0.173273"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.555957" elapsed="0.000489"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="Keywords">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-04-06T21:18:08.653775" level="INFO">Waited for Element with selector css=#entryForm at state visible</msg>
-<arg>${locator}</arg>
-<arg>visible</arg>
-<arg>10s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-04-06T21:18:08.643300" elapsed="0.010647"/>
-</kw>
 <arg>css=#entryForm</arg>
-<status status="PASS" start="2026-04-06T21:18:08.642527" elapsed="0.011565"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.561339" elapsed="0.000209"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-04-06T21:18:08.655250" level="INFO">Types the text '7.5' in the given field.</msg>
 <arg>id=sleep</arg>
 <arg>7.5</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-04-06T21:18:08.654370" elapsed="0.362582"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.562041" elapsed="0.000211"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-04-06T21:18:09.018933" level="INFO">Selects the option(s) hyva by attribute SelectAttribute.value from element id=mood.</msg>
-<msg time="2026-04-06T21:18:19.119043" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-06T21:18:19.119268" level="INFO">See also file:///C:/Users/nice.pavliuk/Sakarin%20harjoitukset/Projekti/outputs/teht4/playwright-log.txt for additional details.</msg>
-<msg time="2026-04-06T21:18:19.119753" level="FAIL">TimeoutError: locator.selectOption: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('id=mood')
-    - locator resolved to &lt;select id="mood"&gt;…&lt;/select&gt;
-  - attempting select option action
-    2 × waiting for element to be visible and enabled
-      - did not find some options
-    - retrying select option action
-    - waiting 20ms
-    2 × waiting for element to be visible and enabled
-      - did not find some options
-    - retrying select option action
-      - waiting 100ms
-    18 × waiting for element to be visible and enabled
-       - did not find some options
-     - retrying select option action
-       - waiting 500ms
-    - waiting for element to be visible and enabled
-    - element is not visible
-  - retrying select option action
-    - waiting 500ms
-</msg>
 <arg>id=mood</arg>
 <arg>value</arg>
 <arg>hyva</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="FAIL" start="2026-04-06T21:18:09.017872" elapsed="10.108410">TimeoutError: locator.selectOption: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('id=mood')
-    - locator resolved to &lt;select id="mood"&gt;…&lt;/select&gt;
-  - attempting select option action
-    2 × waiting for element to be visible and enabled
-      - did not find some options
-    - retrying select option action
-    - waiting 20ms
-    2 × waiting for element to be visible and enabled
-      - did not find some options
-    - retrying select option action
-      - waiting 100ms
-    18 × waiting for element to be visible and enabled
-       - did not find some options
-     - retrying select option action
-       - waiting 500ms
-    - waiting for element to be visible and enabled
-    - element is not visible
-  - retrying select option action
-    - waiting 500ms
-</status>
+<status status="NOT RUN" start="2026-05-03T23:06:56.575981" elapsed="0.000222"/>
 </kw>
 <kw name="Type Text" owner="Browser">
 <arg>id=comment</arg>
@@ -159,44 +92,26 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-06T21:18:19.126876" elapsed="0.000287"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.577997" elapsed="0.000183"/>
 </kw>
 <kw name="Click" owner="Keywords">
 <arg>css=#saveEntryBtn</arg>
-<status status="NOT RUN" start="2026-04-06T21:18:19.127754" elapsed="0.000225"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.585280" elapsed="0.000207"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-04-06T21:18:19.128418" elapsed="0.000252"/>
+<status status="NOT RUN" start="2026-05-03T23:06:56.592576" elapsed="0.000207"/>
 </kw>
-<msg time="2026-04-06T21:18:19.148769" level="INFO">Switching context to context=baf6bcae-4931-482d-a1f4-d6dc79afcdec in CURRENT</msg>
-<msg time="2026-04-06T21:18:19.156569" level="INFO">Successfully changed active context: context=baf6bcae-4931-482d-a1f4-d6dc79afcdec</msg>
-<msg time="2026-04-06T21:18:19.182621" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2026-04-06T21:18:04.935102" elapsed="14.194124">TimeoutError: locator.selectOption: Timeout 10000ms exceeded.
+<msg time="2026-05-03T23:06:56.608231" level="INFO">Switching context to context=0026186b-ab01-45fe-a7b8-226e9d121cc6 in CURRENT</msg>
+<msg time="2026-05-03T23:06:56.612888" level="INFO">Successfully changed active context: context=0026186b-ab01-45fe-a7b8-226e9d121cc6</msg>
+<msg time="2026-05-03T23:06:56.632918" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-05-03T23:06:50.252203" elapsed="6.341395">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/src/html/login.html
 Call log:
-  - waiting for locator('id=mood')
-    - locator resolved to &lt;select id="mood"&gt;…&lt;/select&gt;
-  - attempting select option action
-    2 × waiting for element to be visible and enabled
-      - did not find some options
-    - retrying select option action
-    - waiting 20ms
-    2 × waiting for element to be visible and enabled
-      - did not find some options
-    - retrying select option action
-      - waiting 100ms
-    18 × waiting for element to be visible and enabled
-       - did not find some options
-     - retrying select option action
-       - waiting 500ms
-    - waiting for element to be visible and enabled
-    - element is not visible
-  - retrying select option action
-    - waiting 500ms
+  - navigating to "http://localhost:5173/src/html/login.html", waiting until "load"
 </status>
 </test>
-<status status="FAIL" start="2026-04-06T21:18:04.143136" elapsed="15.040735"/>
+<status status="FAIL" start="2026-05-03T23:06:49.265409" elapsed="7.380350"/>
 </suite>
 <statistics>
 <total>
